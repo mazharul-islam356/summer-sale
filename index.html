@@ -257,14 +257,15 @@
         <!-- have a coupon option -->
         <div class="bg-gray-200  p-6 px-8 rounded-xl">
           <h2 class="font-semibold text-xl pb-2 ml-1">Have Coupon?</h2>
-          <input class="lg:p-2 lg:px-4 work-sans rounded-s-lg text-center " type="text" placeholder="coupon code">
-          <button class="bg-[#E527B2] rounded-e-lg font-medium work-sans text-white lg:py-2 lg:px-3 -ml-1">Apply</button>
+          <input id="couponFiled" class="lg:p-2 lg:px-4 work-sans rounded-s-lg text-center " type="text" placeholder="coupon code">
+          
+          <button type="submit" id="applyButton" disabled class="bg-[#E527B2] disabled disabled:bg-gray-300 rounded-e-lg font-medium work-sans text-white lg:py-2 lg:px-3 -ml-1">Apply</button>
         </div>
 
         <!-- price section -->
         <div class="bg-gray-200 mt-8 p-6 px-8 rounded-xl work-sans">
           <div id="liItems" class="mb-10">
-
+            
           </div>
           <p class="bg-slate-500 h-[1px] "></p>
          <div class="mt-10 mb-2">
@@ -273,7 +274,7 @@
           <h2><span class="font-semibold">Total:</span> 00 Tk</h2>
           
          </div>
-         <button class="bg-[#E527B2] text-white p-2 px-4 rounded-lg">Make Purchase</button>
+         <button type="submit" disabled id="makePurchaseButton" class="bg-[#E527B2] disabled disabled:bg-gray-300 text-white p-2 px-4 rounded-lg">Make Purchase</button>
 
         </div>
 
