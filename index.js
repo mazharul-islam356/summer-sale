@@ -31,6 +31,22 @@ function divClickButton (target){
     makePurchaseButton.disabled = true;
     }
 
+
+    // discount part
+    couponFiled = document.getElementById('couponFiled')
+    
+    applyButton.addEventListener('click',function(){
+        if(couponFiled.value == 'SELL200'){
+        let cpnPrice =  total * 0.20;
+        document.getElementById('discountPriceResult').innerText = cpnPrice.toFixed(2);
+        }else{
+            event.stopImmediatePropagation()
+            alert('This is invalid')
+                
+        }
+    })
+
+    
     
    
 }
