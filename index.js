@@ -34,11 +34,14 @@ function divClickButton (target){
 
     // discount part
     couponFiled = document.getElementById('couponFiled')
-    
+    let grandTotal = document.getElementById('grandTotal')
     applyButton.addEventListener('click',function(){
         if(couponFiled.value == 'SELL200'){
         let cpnPrice =  total * 0.20;
         document.getElementById('discountPriceResult').innerText = cpnPrice.toFixed(2);
+        let discountTotalPrice = parseFloat(total) - parseFloat(cpnPrice.toFixed(2));
+        grandTotal.innerText = discountTotalPrice.toFixed(2);
+
         }else{
             event.stopImmediatePropagation()
             alert('This is invalid')
