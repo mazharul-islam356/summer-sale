@@ -44,12 +44,16 @@ function divClickButton (target){
 
         }else{
             event.stopImmediatePropagation()
-            alert('This is invalid')
+            alert('Please input a valid coupon')
                 
         }
     })
+    goHome.addEventListener('click',function(){
 
+        window.location.reload('goHome')
+    })
     
+
     
    
 }
